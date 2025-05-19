@@ -611,7 +611,7 @@ body.push-side #ascrail2000-hr {
 	left: 0;
 	overflow: hidden;
 	padding: 27px 45px;
-	z-index: 999;
+	z-index: 100;
 	background: #ffffff;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
@@ -995,12 +995,55 @@ artwork page
 .artwork>ul {
 	display: flex;
 	justify-content: space-between;
+	padding: 0px 20px;
 }
 
 .artwork>ul>li {
 	width: 30%;
-	height: 200px;
 	background-color: rgb(224, 224, 224);
+	box-shadow: #3333336c 0px 0px 20px;
+	overflow: hidden;
+
+}
+.artwork>ul>li>a>img{
+		transition: all 0.5s;
+}
+.artwork>ul>li>a>img:hover{
+	scale: 1.05;
+	transition: all 0.5s;
+}
+
+.popup1,.popup2,.popup3{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #242424b9;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	backdrop-filter: blur(5px);
+	
+}
+
+.popup1>img,.popup2>img,.popup3>img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.popup1>button,.popup2>button,.popup3>button{
+background-color: transparent;
+border: none;
+color: #fff;
+font-size: 30px;
+padding-left: 20px;
+}
+.popup1>button,.popup2>button,.popup3>button:hover{
+
 }
 
 /* ----------------
@@ -1054,6 +1097,7 @@ Contact page
 
 .contect>ul>li>a>img {
 	width: 30%;
+		transition: all 0.3s;
 }
 
 .contect>ul>li>a:hover>p {
