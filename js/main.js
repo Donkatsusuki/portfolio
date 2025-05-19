@@ -207,3 +207,37 @@ $(window).on('load', function() {
 	});
 
 })(jQuery);
+
+// ========================
+// 	popup gallery
+// ========================
+
+$(function(){
+    $(".popup1").hide();
+    $(".poster1").click(function(){
+        $(".popup1").stop().fadeIn();
+    });
+    $(".popup1>button").click(function(){
+        $(".popup1").stop().fadeOut();
+    });
+});
+
+$(function(){
+    $(".popup2").hide();
+    $(".poster2").click(function(){
+        $(".popup2").stop().fadeIn();
+    });
+    $(".popup2>button").click(function(){
+        $(".popup2").stop().fadeOut();
+    });
+});
+
+$(function(){
+    $(".popup3").hide();
+    $(".poster3").click(function(){
+        $(".popup3").stop().fadeIn();
+    });
+    $(".popup3>button").click(function(){
+        $(".popup3").stop().fadeOut();
+    });
+});
