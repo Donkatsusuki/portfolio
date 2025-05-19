@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+.BIBX{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.WEB{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
