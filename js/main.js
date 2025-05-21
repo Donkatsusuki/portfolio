@@ -302,8 +302,11 @@ $(function() {
 });
 
   const konamiCode = [
-    "a","b","b","a","b","ArrowRight","ArrowRight","ArrowLeft"
-	// 짱구 암흑마왕커맨드
+    "ArrowUp", "ArrowUp",
+    "ArrowDown", "ArrowDown",
+    "ArrowLeft", "ArrowRight",
+    "ArrowLeft", "ArrowRight",
+    "b", "a"
   ];
 
   let inputSequence = [];
