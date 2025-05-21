@@ -1014,7 +1014,7 @@ artwork page
 }
 .artwork>ul>li>a>img:hover{
 	scale: 1.05;
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 
 .popup1,
