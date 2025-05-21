@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/guide_bhma.css">
+    <link rel="icon" type="image/png" sizes="50x50" href="../img/favicon_bhma.png">
+    <title>BI & BX Guide</title>
+</head>
+
+<body>
+    <div class="bibx" id="bibx">
+        <img src="../img/guide/bibx_guide_bhma_2.jpg" alt="BIBX_img">
+    </div>
+    <div class="move">
+        <a href="#bibx">
+            TOP
+        </a>
+        <a href="./main.html">
+            BACK
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+
+</html>
